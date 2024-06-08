@@ -31,7 +31,7 @@ jobs:
           git status
           git stash --include-untracked
           git remote -v
-          git remote -r
+          git branch -r
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
