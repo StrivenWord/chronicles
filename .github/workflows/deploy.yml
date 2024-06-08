@@ -29,8 +29,9 @@ jobs:
       - name: Debug build.
         run: |
           git status
+          git stash --include-untracked
           git remote -v
-          git remote -a
+          git remote -r
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
