@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
   steps:
-    - uses: actions/checkout@vs
+    - name: Check out.
+    - uses: actions/checkout@v2
     
     - name: Activate Python.
       uses: actions/setup-python@v2
