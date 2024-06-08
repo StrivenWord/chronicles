@@ -26,6 +26,12 @@ jobs:
       - name: Build the public site.
         run: pelican content -o output -s pelicanconf.py
 
+      - name: Debug build.
+        run: |
+          git status
+          git remote -v
+          git remote -a
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
