@@ -3,6 +3,7 @@ SITENAME = 'AI Chronicles'
 SITEURL = ""
 THEME = 'themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'yeti'
+RELATIVE_URLS = True    # Only for local development.
 
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['i18n_subsites']
